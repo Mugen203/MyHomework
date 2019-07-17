@@ -45,7 +45,7 @@ deposit_2 = deposit(bal_2, 250.00)
 print(deposit_2)
 
 #This is for dictionary of dictionaries
-
+account_001 = ["First_Name":"Kwaku","Last_Name":"Affram","Account_Type":"Loan","Balance":360.00]
 account_002 = ["First_Name":"Kojo", "Last_Name":"Ansah", "Account_Type":"Savings", "Balance":9000]
 account_003 = ["First_Name":"Evelyn","Last_Name":"Essien","Account_Type":"Current", "Balance":5400]
 
