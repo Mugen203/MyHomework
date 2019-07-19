@@ -40,4 +40,4 @@ def convert_File(File_Name):
     text_File.close()
 
 
-convert_File("rednblack.jpg")
+convert_File()
