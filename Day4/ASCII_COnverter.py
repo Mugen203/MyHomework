@@ -31,7 +31,7 @@ def convert_Text_File(Black_n_White_FIle):
     return new_Text
 
 def convert_File(File_Name):
-    File = imageio.imread.(File_Name)
+    File = imageio.imread(File_Name)
     BW_File = convert_File_To_BW(File)
     imageio.imwrite("BW" + File_Name, BW_File)
     stripped_Name = File_Name.split(".")[0]
@@ -40,4 +40,4 @@ def convert_File(File_Name):
     text_File.close()
 
 
-convert_File("")
+convert_File("rednblack.jpg")
