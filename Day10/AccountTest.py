@@ -1,10 +1,17 @@
-class Account(object):
-    def __init__(self, type, owner):
+#Class to hold account information for the bank.
+class account(object):
+    def __init__(self, type, owner,account_number,pin,balance):
         self.type = type
         self.owner = owner
-        
-    def verify_account(account_number, pin):
-        return True or False
+        self.account_number = account_number
+        self.pin = pin
+        self.balance = balance
 
-    def debit(amount):
-        
+    def debit(self,amount):
+        deposit_balance = self.balance - amount
+        return deposit_balance
+
+    def credit(self,amount):
+        credit_balance = self.balance + amount
+        return credit_balance
+    #End of the class.
