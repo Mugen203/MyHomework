@@ -1,8 +1,9 @@
-var ourArray = [18,64,99];
-ourArray.push(3);
-console.log(ourArray);
+var myArray = [];
+var i = 10;
 
-function funcArg(a,b) {
-    console.log(a*b)
-}
+do {
+    myArray.push(i);
+    i++;
+} while (i < 5)
 
+console.log(i, myArray);
