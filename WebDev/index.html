@@ -1,74 +1,28 @@
-<!DOCTYPE html>
-<style>
-    .d1{background: lightskyblue;}
-    .d2{background: lightsalmon;}
-    .d3{background: paleturquoise;}
-    .d4{background: lightpink;}
-    .d5{background: palegreen;}
-
-    .container{
-        font-size: 40px;
-        justify-items: center;
-        width: 100%;
-        background: lightgray;
-        display: grid;
-        grid-template-columns: 1fr 100px 2fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-gap: 10px 20px;
-    }
- 
-</style>
-<html>
+<html <!DOCTYPE html>
+<html class="no-js"> 
     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="This is an awesome website!">
-       <title>Martin"s Website</title> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Classes! </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
     </head>
     <body>
+        <h2 id = "title">
+            Classes: HTML List Binding
+        </h2>
 
-        <div class="container">
-            <div class="d1">1</div>
-            <div class="d2">2</div>
-            <div class="d3">3</div>
-            <div class="d4">4</div>
-            <div class="d5">5</div>
-        </div>
-        
+        <ul id = "myList">
+            <!--To be filled later with JavaScript-->
             
-        <!--
-            <img class="thick-green-border" height="100" src="891325.png" alt="Darth Maul" />
+        </ul>
+        
+        <script src="index.js"></script>
 
-             <video src="1. Welcome.mp4" controls width="500" poster="891325.png" autoplay>
-                 </video>
-        -->
-      
-        </textarea>
-        <!--Body of the page-->
-        <header>
-            <!--Header of the page in the body of the website-->
-            <nav>
-
-            </nav>
-        </header>
-
-        <main>
-            <!--Main part of the page-->
-            <article>
-                <!--An article section in the website-->
-                <section>
-                    <!--A section within the website-->
-                    <aside>
-                        <!--Something displayed but not critical to the website's content-->
-                        <!-- This is how to organize the website code for best practice mainly. Helps search engines as well. -->
-                    </aside>
-                </section>
-            </article>
-
-        </main>
-
-        <footer>
-            <!--Footer for the page-->
-        </footer>
-        <!--How to comment in HTML-->
+        <script type="text/javascript">
+            const myList = document.getElementById("myList");
+            const listBind = new ListBinding(myList);
+        </script>
     </body>
 </html>
